@@ -38,6 +38,7 @@ The galaxy is vast, but your logic should be simple. Focus on finding the best r
 *
 * Before you begin:
 * Don't forget to `npm install` to install the necessary packages, and `npm run test` to run the tests.
+* Ignore the solutions.md, unless you want to spoil the surprise.
 *
 * Good luck, Tenno! The Origin System is counting on you!
  */
