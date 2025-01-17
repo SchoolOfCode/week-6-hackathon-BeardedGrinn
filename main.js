@@ -1,3 +1,47 @@
+/**
+ * Welcome Tenno! Long ago, in the shadowed corners of the Origin System, the legendary Sevagoth Prime was shattered into four parts: his Blueprint, Neuroptics, Chassis, and Systems. These fragments were scattered across the galaxy, hidden within mysterious relics, each protected by a veil of probability.
+*
+* Your mission, Tenno, is to uncover the most reliable relics to assemble Sevagoth Prime once more. To achieve this, you must analyze the rewards within the relics and determine which relic offers the highest chance of obtaining each piece of Sevagoth Prime.
+* The Challenge:
+* For each Sevagoth Prime component:
+*
+* Identify all relics that can yield the component as a reward.
+Analyze their drop probabilities to find the relic that gives you the best chance of acquiring that specific part.
+Return your findings, mapping each component to its best relic.
+*
+* Rules of Engagement:
+* Relics contain rewards with three levels of rarity: Common, Uncommon, and Rare. Each rarity has an associated probability.
+Your focus is only on the four components of Sevagoth Prime:
+* Sevagoth Prime Blueprint
+* Sevagoth Prime Neuroptics Blueprint
+* Sevagoth Prime Chassis Blueprint
+* Sevagoth Prime Systems Blueprint
+* You must return the best relic for each component as an object, where the key is the component name and the value is the relic name.
+*
+* Example Output:
+* If your analysis is correct, the result should look like this:
+
+{
+    "Sevagoth Prime Blueprint": "Lith G13",
+    "Sevagoth Prime Neuroptics Blueprint": "Neo S11",
+    "Sevagoth Prime Chassis Blueprint": "Meso A7",
+    "Sevagoth Prime Systems Blueprint": "Meso G8"
+}
+*
+* Hints:
+* Relics can be tricky to interpret. Ensure you check all the rewards for a match before making your decision.
+Sometimes multiple relics offer the same component. In these cases, compare the drop probabilities to make your choice.
+The galaxy is vast, but your logic should be simple. Focus on finding the best relic for each component without overthinking it.
+
+* Tests Will Guide You:
+* The ancient Ordis AI has already prepared tests to verify your work. If you succeed, the tests will light up with a green glow, and Sevagoth Prime will be whole again.
+*
+* Before you begin:
+* Don't forget to `npm install` to install the necessary packages, and `npm run test` to run the tests.
+*
+* Good luck, Tenno! The Origin System is counting on you!
+ */
+
 export const relicData = [
     {
     name: 'Axi A19', 
@@ -74,49 +118,9 @@ export const relicData = [
 ];
 
 export function sevagothRelics(relicData) {
-    // const sevagothComponents = [
-    //     'Sevagoth Prime Blueprint',
-    //     'Sevagoth Prime Neuroptics Blueprint',
-    //     'Sevagoth Prime Chassis Blueprint',
-    //     'Sevagoth Prime Systems Blueprint'
-    // ];
 
-    // const requiredRelics = relicData.filter(relic =>
-    //     relic.rewards.some(reward => sevagothComponents.includes(reward.name))
-    // );
-
-    // return requiredRelics.map(relic => relic.name);
 };
 
 export function bestSevagothRelics(relicData) {
-    // const sevagothComponents = [
-    //     'Sevagoth Prime Blueprint',
-    //     'Sevagoth Prime Neuroptics Blueprint',
-    //     'Sevagoth Prime Chassis Blueprint',
-    //     'Sevagoth Prime Systems Blueprint'
-    // ];
 
-    // // Initialize an object to store the best relic for each component
-    // const bestRelics = {};
-
-    // // Iterate over the components
-    // sevagothComponents.forEach(component => {
-    //     // Find all relics that contain this component
-    //     const matchingRelics = relicData.filter(relic =>
-    //         relic.rewards.some(reward => reward.name === component)
-    //     );
-
-    //     // Select the relic with the highest drop probability for this component
-    //     const bestRelic = matchingRelics.reduce((best, currentRelic) => {
-    //         const bestReward = best.rewards.find(reward => reward.name === component);
-    //         const currentReward = currentRelic.rewards.find(reward => reward.name === component);
-
-    //         return currentReward.probability > bestReward.probability ? currentRelic : best;
-    //     });
-
-    //     // Store the best relic for the current component
-    //     bestRelics[component] = bestRelic.name;
-    // });
-
-    // return bestRelics;
 };
